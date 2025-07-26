@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Fireplace</title>
+        <style>
+            h2 {
+                color: brown;
+                text-align: right;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: aquamarine;">Hi My Name is KOMAL</h1>
+        <h2>My Dream Place</h2>
+        <p style="text-align: center; color: rebeccapurple;">Hello Stranger! Welcome to My Place.</p>
+        <ul>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Cherries</li>
+        </ul>
+        <ol>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Cherries</li>
+        </0l><br>
+        <dl>
+            <dt>HTML</dt>
+            <dd><ul><li>A markup language for creating web pages.</li></ul></dd>
+            <dt>CSS</dt>
+            <dd>A language for styling HTML content.</dd>
+        </dl><br>
+        <a href="Gallery.html"></a>
+        <button>See My Gallary</button>
+        
+    </body>
+</html>

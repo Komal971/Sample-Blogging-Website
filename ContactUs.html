@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komal - Experience Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+/* HEADER SECTION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.contact .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact .heading span {
+  color: #007bff;
+}
+
+/* Form styles */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-box input {
+  flex: 1 1 45%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.input-box input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 150px;
+  transition: border 0.3s ease;
+}
+
+.btn {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .input-box input {
+    flex: 1 1 100%;
+  }
+
+  .contact {
+    padding: 20px 15px;
+  }
+
+  .contact .heading {
+    font-size: 2rem;
+  }
+}
+  </style>
+</head>
+<body>
+   
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="https://formspree.io/f/mpwreyrl" method="POST">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+      <input type="text" name="subject" placeholder="Subject">
+      <input type="tel" name="phone" placeholder="Phone Number">
+    </div>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+</body>
+</html>
